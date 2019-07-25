@@ -1,0 +1,3 @@
+<div>
+  Custom page
+</div>

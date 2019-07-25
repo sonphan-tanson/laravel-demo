@@ -15,3 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/hello','HelloController@hello');
+Route::get('/input','InputController@index1');
+Route::post('/output','InputController@index2')->name('sum');
+Route::get('/students','StudentController@index')->name('students');
+Route::get('/admins',function(){
+    return view('admin');
+});
+Route::get('/users',function(){
+    return view('user');
+})->name('students');
