@@ -24,3 +24,6 @@ Route::get('/admins',function(){
 Route::get('/users',function(){
     return view('user');
 })->name('students');
+Route::get('/admin',function(){
+    return view('admin.master');
+})->name('students');
