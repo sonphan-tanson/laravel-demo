@@ -26,4 +26,9 @@ Route::get('/users',function(){
 })->name('students');
 Route::get('/admin',function(){
     return view('admin.master');
-})->name('students');
+})->name('adm');
+
+Route::get('/class','ClassRoomController@index');
+
+Route::get('/classes/add','ClassRoomController@createForm')->name('classes.add-forms');
+Route::post('/classes/add','ClassRoomController@create')->name('classes.create-post');
